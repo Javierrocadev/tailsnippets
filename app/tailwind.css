@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.splitter {
+    border: 1px solid #00668c;
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f4f1;
+}
+.splitter__first {
+    width: 90%;
+    height: 100%;
+    min-width: 360px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.splitter__resizer {
+    background: #00668c;
+    /* border-left: 3px solid #71c4ef; */
+    height: 100%;
+    width: 20px;
+    cursor: ew-resize;
+    user-select: none;
+    touch-action: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splitter__resizer::before {
+    content: "||";
+    display: block; /* para que el contenido sea visualizado */
+    color: white; /* color del texto */
+    font-size: 12px; /* tamaño del texto */
+    /* Estilos adicionales si son necesarios */
+}
+.splitter__second {
+    flex: 1;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
