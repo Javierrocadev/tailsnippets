@@ -46,3 +46,19 @@
     justify-content: center;
     
 }
+
+@media (max-width: 440px) {
+    .splitter__first {
+        width: 100%;
+        min-width: 200px;
+    }
+    .splitter__resizer::before {
+        display: hidden; /* para que el contenido sea visualizado */
+
+    }
+    .splitter__second {
+       display: none;
+        
+    }
+  }
+  

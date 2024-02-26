@@ -1,26 +1,26 @@
 import { useParams } from "@remix-run/react";
-import React from "react";
+import React, { useState } from "react";
+import { TbCopy, TbCode, TbArrowBigLeftLinesFilled } from "react-icons/tb";
 
 const datos = [
   {
     id: "1",
-    nombre: "Componente 1",
+    nombre: "Avatar Card",
     html: `
-    <div class="max-w-xs rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="https://via.placeholder.com/150" alt="Sunset in the mountains">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">Mountain Sunset</div>
-        <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-        </p>
-      </div>
-      <div class="px-6 pt-4 pb-2">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#mountain</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#sunset</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#nature</span>
-      </div>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white">
+    <img class="w-full" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" alt="Avatar" />
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">Usuario</div>
+      <p class="text-gray-700 dark:text-gray-300 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
     </div>
-
+    <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white mr-2">#ux</span>
+      <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white mr-2">#ui</span>
+      <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-white">#web</span>
+    </div>
+  </div>
   `,
   },
   {
@@ -127,11 +127,106 @@ const datos = [
 </div>
 <!-- Fin bloque -->`,
   },
+  {
+    id: "4",
+    nombre: "Componente 3",
+    html: `<!-- Bloque -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
+    <!-- Card 1 -->
+    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
+  <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
+  <div class="">
+      <p class="font-extrabold">Card title</p>
+      <p class="">4 popular types of cards in UI design.</p>
+  </div>
+  <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
+</div>
+  
+    <!-- Card 2 -->
+    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
+  <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
+  <div class="">
+      <p class="font-extrabold">Card title</p>
+      <p class="">4 popular types of cards in UI design.</p>
+  </div>
+  <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
+</div>
+  
+    <!-- Card 3 -->
+    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
+    <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
+    <div class="">
+        <p class="font-extrabold">Card title</p>
+        <p class="">4 popular types of cards in UI design.</p>
+    </div>
+    <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
+  </div>
+  </div>
+  
+<!-- Fin bloque -->`,
+  },
+  {
+    id: "5",
+    nombre: "Card skeleton",
+    html: `  <div class="mx-auto flex w-96 flex-col justify-center bg-white dark:bg-slate-800 rounded-2xl shadow-xl">
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" />
+    <div class="p-4">
+      <p class="text-blue-400 text-xs">Web developer</small>
+      <h1 class="text-2xl font-medium text-slate-600 pb-1">Javier Roca</h1>
+      <p class="text-sm tracking-tight font-light text-slate-400">Building the future one web at a time</p>
+    </div>
+  </div>`,
+  },
+  {
+    id: "6",
+    nombre: "Skeleton card",
+    html: `
+    <div class="mx-auto px-5">
+      <div class="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 dark:bg-gray-800">
+        <img class="w-64 h-40 animate-pulse rounded-lg object-cover object-center mb-6 bg-gray-300 dark:bg-gray-500" src="" alt="img" />
+        <p class="w-full h-6 my-4 pl-4   animate-pulse bg-gray-300 dark:bg-gray-500"></p>
+        <p class="w-44 h-4   animate-pulse bg-gray-300 dark:bg-gray-500"></p>
+      </div>
+    </div>
+ `,
+  },
+  {
+    id: "7",
+    nombre: "Skeleton card",
+    html: `
+    <div class="mx-auto px-5">
+    <div class="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 dark:bg-gray-800">
+      <img class="mb-2 h-40 w-full rounded-lg bg-gray-300 object-cover object-center dark:bg-gray-500" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" alt="img" />
+      <p class="text-xl text-gray-900 dark:text-gray-500">Javier Roca</p>
+      <p class="text-xs italic text-gray-300 dark:text-gray-500">Web developer</p>
+    </div>
+  </div>
+ `,
+  },
+  {
+    id: "8",
+    nombre: "Skeleton card",
+    html: `
+    <div class="mx-auto px-5">
+  <div class="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 dark:bg-gray-800">
+    <img class="mb-2 h-40 w-full rounded-lg bg-gray-300 object-cover object-center dark:bg-gray-500" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" alt="img" />
+    <p class="text-xl text-gray-900 dark:text-gray-500">Javier Roca</p>
+    <p class="text-xs italic text-gray-300 dark:text-gray-500">Web developer</p>
+  </div>
+</div>
+ `,
+  },
+  {
+    id: "99999",
+    nombre: "Componente 3",
+    html: ``,
+  },
 ];
 
 function ComponentsComponentId() {
   const { componentId } = useParams();
-
+  const [showCode, setShowCode] = useState(false);
   // Encontrar el componente según el ID
   const componente = datos.find((item) => item.id === componentId);
 
@@ -142,12 +237,15 @@ function ComponentsComponentId() {
 
   const copyHTMLToClipboard = () => {
     const htmlToCopy = componente.html;
-    navigator.clipboard.writeText(htmlToCopy).then(() => {
-      alert('HTML copiado al portapapeles');
-    }).catch((error) => {
-      console.error('Error al copiar HTML al portapapeles:', error);
-      alert('Error al copiar HTML al portapapeles');
-    });
+    navigator.clipboard
+      .writeText(htmlToCopy)
+      .then(() => {
+        alert("HTML copiado al portapapeles");
+      })
+      .catch((error) => {
+        console.error("Error al copiar HTML al portapapeles:", error);
+        alert("Error al copiar HTML al portapapeles");
+      });
   };
 
   const Splitter = () => {
@@ -265,14 +363,91 @@ function ComponentsComponentId() {
     };
 
     return (
-      <div className="splitter" ref={containerRef}>
-        <div className="splitter__first" ref={firstHalfRef}>
-        <iframe
-            
-            title={`Componente ${componente.id}`}
-            // className="bg-red-500"
-            // srcDoc={componente.html}
-            srcDoc={`<!DOCTYPE html>
+      // <div className="splitter" ref={containerRef}>
+      //   <div className="splitter__first" ref={firstHalfRef}>
+      //   {showCode ? (
+      //     <p>
+      //     <pre className=" bg-blue-500"><code  className="flex flex-wrap bg-red-500 shrink-1">
+      //       {componente.html}
+
+      //     </code></pre>
+      //     {/* <p>hoam lasdlf asdof asdfja sdfa sdflasd fasldhfoentnoea f lalfa dfadpaosdnfalsd ofoosdf aetañelrt añsdlfnañsoldfj aerudlfhalksedjsrh aldf vadyfjpaoeurhfñadl odt ag </p> */}
+      //     </p>
+      //   ) : (
+      //   <iframe
+
+      //       title={`Componente ${componente.id}`}
+      //       // className="bg-red-500"
+      //       // srcDoc={componente.html}
+      //       srcDoc={`<!DOCTYPE html>
+      //       <html>
+      //       <head>
+      //         <meta charset="utf-8">
+      //         <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      //         <script src="https://cdn.tailwindcss.com"></script>
+      //         <script>
+      //           tailwind.config = {
+      //             darkMode: 'class',
+      //           }
+
+      //           function toggleMode() {
+      //             const body = document.body;
+      //             body.classList.toggle('light');
+      //             body.classList.toggle('dark');
+
+      //             // Obtiene el botón
+      //             const button = document.getElementById('modeToggleButton');
+      //             // Cambia el texto del botón según el modo actual
+      //             if (body.classList.contains('light')) {
+      //               button.textContent = 'Dark Mode';
+      //             } else {
+      //               button.textContent = 'Light Mode';
+      //             }
+      //           }
+      //         </script>
+      //       </head>
+      //       <body class="light">
+      //         <main class="bg-white h-full sm:h-screen flex justify-center items-start md:items-center dark:bg-slate-600">
+      //           <!-- Aquí se incluirá el contenido del componente -->
+      //           ${componente.html}
+      //           <button id="modeToggleButton" onclick="toggleMode()" class="p-2 rounded absolute top-2 right-2 border border-[#71c4ef]">Dark Mode</button>
+      //         </main>
+      //       </body>
+      //       </html>
+
+      //       `}
+      //       className="h-full w-full flex justify-center items-center  rounded-l-xl "
+      //     />)}
+      //   </div>
+      //   <div
+      //     className="splitter__resizer"
+      //     ref={resizerRef}
+      //     onMouseDown={handleMouseDown}
+      //     onTouchStart={handleTouchStart}
+      //   />
+      //   <div className="splitter__second" ref={secondHalfRef}>
+      //     flecha
+      //   </div>
+      // </div>
+
+      <>
+        {showCode ? (
+          // h-full flex justify-center items-center bg-bg-200 dark:bg-primary-100 rounded-lg border border-accent-200 dark:border-text-200 p-4
+          <pre className="bg-white  p-2 rounded-xl border border-accent-200 flex items-start overflow-scroll [width:_calc(100vw_-258px)!important;] [height:calc(100vh-170px)_!important]">
+            {/* <code  className=" bg-red-500 ">
+          {componente.html}
+        </code> */}
+
+            {componente.html}
+          </pre>
+        ) : (
+          <div className="splitter" ref={containerRef}>
+            <div className="splitter__first" ref={firstHalfRef}>
+              <iframe
+                title={`Componente ${componente.id}`}
+                // className="bg-red-500"
+                // srcDoc={componente.html}
+                srcDoc={`<!DOCTYPE html>
             <html>
             <head>
               <meta charset="utf-8">
@@ -292,9 +467,9 @@ function ComponentsComponentId() {
                   const button = document.getElementById('modeToggleButton');
                   // Cambia el texto del botón según el modo actual
                   if (body.classList.contains('light')) {
-                    button.textContent = 'Dark Mode';
+                    button.innerHTML = '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>';
                   } else {
-                    button.textContent = 'Light Mode';
+                    button.innerHTML = '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path><path d="M6.343 17.657l-1.414 1.414"></path><path d="M6.343 6.343l-1.414 -1.414"></path><path d="M17.657 6.343l1.414 -1.414"></path><path d="M17.657 17.657l1.414 1.414"></path><path d="M4 12h-2"></path><path d="M12 4v-2"></path><path d="M20 12h2"></path><path d="M12 20v2"></path></svg>';
                   }
                 }
               </script>
@@ -303,40 +478,69 @@ function ComponentsComponentId() {
               <main class="bg-white h-full sm:h-screen flex justify-center items-start md:items-center dark:bg-slate-600">
                 <!-- Aquí se incluirá el contenido del componente -->
                 ${componente.html} 
-                <button id="modeToggleButton" onclick="toggleMode()" class="p-2 rounded absolute top-2 right-2 border border-[#71c4ef]">Dark Mode</button>
+                <button id="modeToggleButton" onclick="toggleMode()" class="p-2 rounded absolute top-2 right-2 border border-[#71c4ef] bg-[#f5f4f1]"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg></button>
               </main>
             </body>
             </html>
             
             `}
-            className="h-full w-full flex justify-center items-center  rounded-l-xl "
-          />
-        </div>
-        <div
-          className="splitter__resizer"
-          ref={resizerRef}
-          onMouseDown={handleMouseDown}
-          onTouchStart={handleTouchStart}
-        />
-        <div className="splitter__second" ref={secondHalfRef}>
-          flecha
-        </div>
-      </div>
+                className="h-full w-full flex justify-center items-center  rounded-l-xl "
+              />
+            </div>
+            <div
+              className="splitter__resizer"
+              ref={resizerRef}
+              onMouseDown={handleMouseDown}
+              onTouchStart={handleTouchStart}
+            />
+            <div className="splitter__second" ref={secondHalfRef}>
+            <TbArrowBigLeftLinesFilled  className=" text-accent-200 w-8 h-8  dark:bg-text-200 rounded-full p-1   mr-1 group-hover:bg-accent-100" />
+            </div>
+          </div>
+        )}
+      </>
     );
   };
-
+  const toggleView = () => {
+    setShowCode(!showCode);
+  };
   return (
     <>
-      <div className="border rounded-lg bg-bg-200 dark:bg-primary-100 border-accent-200 dark:border-text-200 h-24 p-2  col-span-5">
+      <div className="border rounded-lg shrink-0 bg-bg-200 dark:bg-primary-100 border-accent-200 dark:border-text-200 h-52 md:h-24 p-2  col-span-5 flex md:flex-row flex-col items-center justify-between px-4">
         {/* Botones para cambiar el tamaño del contenedor */}
-        <p>El ID : {componentId}</p>
-        <a className="w-40 px-4 py-2.5 text-bg-100 font-sans flex items-center gap-2 border-none rounded-full text-base  font-semibold transition-colors duration-200 [background:_linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb);] text-offwhite cursor-pointer lg:flex button--create h-[42px] relative overflow-visible" href="https://uiverse.io"> Need more...</a>
-        <button className="bg-accent-100" onClick={copyHTMLToClipboard}>Copiar HTML</button>
 
-
-
+        <p className="font-bold p-2 md:hidden  lg:block block lg:text-2xl text-accent-200 dark:text-text-100">
+          {componente.nombre}
+        </p>
+        <div className="flex flex-col md:flex-row gap-2 w-full md:w-fit">
+          <button
+            className="flex gap-1  bg-bg-100 p-2 rounded-full justify-center items-center"
+            onClick={copyHTMLToClipboard}
+          >
+            <TbCopy className="flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200 rounded-full p-1 stroke-bg-100  mr-1 group-hover:bg-accent-100" />
+            <p className="font-bold text-accent-200 dark:text-text-100">Copy</p>
+          </button>
+          <button
+            className="flex gap-1 bg-bg-100 p-2 rounded-full justify-center items-center"
+            onClick={toggleView}
+          >
+            <TbCode className="flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200 rounded-full p-1 stroke-bg-100  mr-1 group-hover:bg-accent-100" />
+            <p className="font-bold text-accent-200 dark:text-text-100">
+              Show/Hide code
+            </p>
+          </button>
+          <a
+            className="w-full md:w-fit px-4 py-2.5 text-bg-100 font-sans flex items-center gap-2 border-none rounded-full text-base  font-semibold transition-colors duration-200 [background:_linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb);] text-offwhite cursor-pointer lg:flex button--create h-[42px] relative overflow-visible"
+            href="https://uiverse.io"
+          >
+            {" "}
+            Need more...
+          </a>
+        </div>
       </div>
       <div className="h-full flex justify-center items-center bg-bg-200 dark:bg-primary-100 rounded-lg border border-accent-200 dark:border-text-200 p-4">
+        {/* <div className="h-full flex items-start justify-start bg-bg-200 dark:bg-primary-100 rounded-lg border border-accent-200 dark:border-text-200 p-4"> */}
+        {/* <div className="h-full  flex justify-center items-start overflow-scroll bg-bg-200 dark:bg-primary-100 rounded-lg border border-accent-200 dark:border-text-200 p-4"> */}
         {/* Mostrar el contenido del componente dentro del iframe */}
         <Splitter />
       </div>
