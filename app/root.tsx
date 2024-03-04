@@ -163,26 +163,31 @@ export default function App() {
                     <div className="pb-4 px-5 mt-4">
                       <Link to="/components/1">
                         <img
-                          className="w-24 h-12 mb-2 bg-white rounded object-contain "
+                          className="w-28 aspect-video mb-2 bg-white rounded object-contain "
                           src={avatar1}
                           alt="avatar1"
                         />
                       </Link>
                       <Link to="/components/2">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded"></div>
                       </Link>
                       <Link to="/components/3 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded"></div>
                       </Link>
                       <Link to="/components/4 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 dark:bg-accent-200 rounded flex items-center justify-center gap-2">
-                          <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
-                          <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
-                          <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 dark:bg-accent-200 rounded flex items-center justify-center gap-1">
+                          <div className="w-6 h-5 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
+                          <div className="w-6 h-5 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
+                          <div className="w-6 h-5 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
                         </div>
                       </Link>
                       <Link to="/components/5 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded flex gap- flex-col items-center justify-center">
+                          <div className="w-8 h-10 bg-accent-200 rounded p-1">
+                            <div className="w-full h-4 bg-accent-100 rounded"></div>
+                            <div className="w-full h-1 bg-primary-100 rounded mt-1"></div>
+                          </div>
+                        </div>
                       </Link>
                     </div>
                   </div>
@@ -234,10 +239,10 @@ export default function App() {
                   >
                     <div className="pb-4 px-5 mt-4">
                       <Link to="/components/100">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded"></div>
                       </Link>
                       <Link to="/components/101">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded flex justify-center items-center">
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded flex justify-center items-center">
                           <div className="w-12 h-4 bg-blue-400"></div>
                         </div>
                       </Link>
@@ -291,10 +296,10 @@ export default function App() {
                   >
                     <div className="pb-4 px-5 mt-4">
                       <Link to="/components/1">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded"></div>
                       </Link>
                       <Link to="/components/2">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                        <div className="w-28 aspect-video mb-2 bg-accent-100 rounded"></div>
                       </Link>
                     </div>
                   </div>
