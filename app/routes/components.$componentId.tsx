@@ -27,147 +27,68 @@ const datos = [
     id: "2",
     nombre: "Componente 2",
     html: `
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
-    <!-- Icon Block -->
-    <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-      <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
-        <svg class="flex-shrink-0 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="10" height="14" x="3" y="8" rx="2"/><path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"/><path d="M8 18h.01"/></svg>
-      </div>
-      <div class="mt-5">
-        <h3 class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">Responsive</h3>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">Responsive, and mobile-first project on the web</p>
-        <span class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
-          Learn more
-          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- End Icon Block -->
-
-    <!-- Icon Block -->
-    <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-      <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
-        <svg class="flex-shrink-0 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
-      </div>
-      <div class="mt-5">
-        <h3 class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">Customizable</h3>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">Components are easily customized and extendable</p>
-        <span class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
-          Learn more
-          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- End Icon Block -->
-
-    <!-- Icon Block -->
-    <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-      <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
-        <svg class="flex-shrink-0 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-      </div>
-      <div class="mt-5">
-        <h3 class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">Documentation</h3>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">Every component and plugin is well documented</p>
-        <span class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
-          Learn more
-          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- End Icon Block -->
-
-    <!-- Icon Block -->
-    <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-      <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
-        <svg class="flex-shrink-0 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
-      </div>
-      <div class="mt-5">
-        <h3 class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">24/7 Support</h3>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">Contact us 24 hours a day, 7 days a week</p>
-        <span class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
-          Learn more
-          <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        </span>
-      </div>
-    </a>
-    <!-- End Icon Block -->
+    <section class="flex items-center justify-center p-4">
+  <div class="grid max-w-[80em] grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
+    <div class="group duration-300 ml-auto mr-auto w-full rounded-xl border bg-blue-50 px-12 py-4 md:px-4">
+      <img src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" class="mb-6 inline-flex aspect-video w-full items-center justify-center rounded-xl bg-white object-cover text-center text-slate-500 shadow-lg group-hover:rotate-2 duration-300" />
+      <h3 class="mb-2 text-3xl font-semibold leading-8">Website example</h3>
+      <p class="mb-4 mt-4 text-lg font-light leading-relaxed text-slate-600">A comprehensive platform designed to inspire and facilitate travel enthusiasts.</p>
+      <div class="block pb-6"><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">React</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">HTML</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Git</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">UI</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Tailwind</span><span class="mr-2 mt-2 inline-block rounded-full bg-white px-2 py-1 text-xs font-semibold text-slate-500 last:mr-0">Login</span></div>
+      <a class="group inline-flex items-center gap-2 font-bold text-slate-700 transition-all duration-300 ease-linear hover:text-blue-500" href="/learning-lab/tailwind-starter-kit/documentation/css/alerts"
+        >Website <svg class="h-4 w-4 -rotate-45 duration-300 group-hover:rotate-0 group-hover:fill-blue-600" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.009 12.002c0-5.517 4.48-9.997 9.998-9.997s9.998 4.48 9.998 9.997c0 5.518-4.48 9.998-9.998 9.998s-9.998-4.48-9.998-9.998zm8.211-4.843c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591z" fill-rule="nonzero" /></svg
+      ></a>
+    </div>
   </div>
-</div>
-<!-- End Icon Blocks -->`,
+</section>
+    `,
   },
   {
     id: "3",
-    nombre: "Componente 3",
-    html: `<!-- Bloque -->
-<div class="flex flex-wrap justify-center">
-  <div class="max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg overflow-hidden">
-    <img class="w-full h-56 object-cover object-center" src="https://via.placeholder.com/400x250" alt="Card image">
-    <div class="px-6 py-4">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 1 Title</h3>
-      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-
-  <div class="max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg overflow-hidden">
-    <img class="w-full h-56 object-cover object-center" src="https://via.placeholder.com/400x250" alt="Card image">
-    <div class="px-6 py-4">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 2 Title</h3>
-      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-
-  <div class="max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg overflow-hidden">
-    <img class="w-full h-56 object-cover object-center" src="https://via.placeholder.com/400x250" alt="Card image">
-    <div class="px-6 py-4">
-      <h3 class="text-xl font-semibold text-gray-800 mb-2">Card 3 Title</h3>
-      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-</div>
-<!-- Fin bloque -->`,
-  },
-  {
-    id: "4",
-    nombre: "Componente 3",
-    html: `<!-- Bloque -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
-    <!-- Card 1 -->
-    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-  <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
-  <div class="">
-      <p class="font-extrabold">Card title</p>
-      <p class="">4 popular types of cards in UI design.</p>
-  </div>
-  <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
-</div>
-  
-    <!-- Card 2 -->
-    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-  <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
-  <div class="">
-      <p class="font-extrabold">Card title</p>
-      <p class="">4 popular types of cards in UI design.</p>
-  </div>
-  <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
-</div>
-  
-    <!-- Card 3 -->
-    <div class="w-60 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-    <div class="w-52 h-40 bg-sky-300 rounded-2xl"></div>
-    <div class="">
-        <p class="font-extrabold">Card title</p>
-        <p class="">4 popular types of cards in UI design.</p>
-    </div>
-    <button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
-  </div>
-  </div>
-  
-<!-- Fin bloque -->`,
-  },
-  {
-    id: "5",
     nombre: "Card skeleton",
     html: `  <div class="mx-auto flex w-96 flex-col justify-center bg-white dark:bg-slate-800 rounded-2xl shadow-xl">
     <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" />
@@ -179,20 +100,57 @@ const datos = [
   </div>`,
   },
   {
-    id: "6",
-    nombre: "Skeleton card",
+    id: "4",
+    nombre: "Group card",
     html: `
-    <div class="mx-auto px-5">
-      <div class="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 dark:bg-gray-800">
-        <img class="w-64 h-40 animate-pulse rounded-lg object-cover object-center mb-6 bg-gray-300 dark:bg-gray-500" src="" alt="img" />
-        <p class="w-full h-6 my-4 pl-4   animate-pulse bg-gray-300 dark:bg-gray-500"></p>
-        <p class="w-44 h-4   animate-pulse bg-gray-300 dark:bg-gray-500"></p>
+    <section class="p-12">
+    <div class="flex items-center justify-center">
+      <div class="mx-auto max-w-6xl rounded-xl bg-blue-100/20 p-6 text-gray-500 dark:bg-slate-200">
+        <div class="relative">
+          <div class="relative z-10 grid grid-cols-6 gap-3 rounded">
+            <div class="relative col-span-full flex justify-center overflow-hidden rounded-xl border border-blue-400 bg-white p-4 duration-300 hover:rotate-1 lg:col-span-2 dark:border-blue-50 dark:bg-slate-600">
+              <div>
+                <div class="flex items-center justify-center pt-6 lg:px-6">
+                  <svg class="h-20 w-20 dark:fill-slate-200" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z" fill-rule="nonzero" /></svg>
+                </div>
+                <div class="relative z-10 mt-6 space-y-2 text-center">
+                  <h2 class="group-hover:text-secondary-950 text-lg font-medium text-gray-800 transition dark:text-white">This is a quote</h2>
+                  <p class="text-gray-700 dark:text-gray-300">"Life is like a box of chocolates; you never know what you're gonna get." - Forrest Gump</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative col-span-full overflow-hidden rounded-xl border border-blue-400 bg-white p-4 duration-300 hover:rotate-1 sm:col-span-3 lg:col-span-2 dark:border-blue-50 dark:bg-slate-600">
+              <div>
+                <div class="flex items-center justify-center pt-6 lg:px-6">
+                  <svg class="h-20 w-20 dark:fill-slate-200" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m19.023 7c-.389 0-3.3 1-7.023 1-3.75 0-6.605-1-7.024-1-.538 0-.976.438-.976.976 0 .453.321.854.757.951 2.162.563 4.571.948 4.571 3.132 0 3.565-2.321 6.899-3.26 8.476-.086.149-.131.319-.131.489 0 .539.438.976.977.976.261 0 .508-.103.694-.29.769-.772 2.292-3.072 2.989-4.182.391-.622.791-1.18 1.409-1.181.603.001 1.005.559 1.397 1.181.697 1.11 2.219 3.41 2.988 4.182.185.187.432.29.695.29.538 0 .976-.437.976-.976 0-.17-.045-.339-.141-.505-.962-1.617-3.25-4.891-3.25-8.46 0-2.309 2.751-2.661 4.563-3.13.443-.099.766-.5.766-.953 0-.538-.439-.976-.977-.976zm-7-5c1.374 0 2.488 1.12 2.488 2.5s-1.114 2.5-2.488 2.5c-1.373 0-2.489-1.12-2.489-2.5s1.116-2.5 2.489-2.5z" fill-rule="nonzero" /></svg>
+                </div>
+                <div class="relative z-10 mt-6 space-y-2 text-center">
+                  <h2 class="group-hover:text-secondary-950 text-lg font-medium text-gray-800 transition dark:text-white">This is a person</h2>
+                  <p class="text-gray-700 dark:text-gray-300">The human embodiment of chaos theory, where every step is a dance with disaster and every word a comedy goldmine.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative col-span-full overflow-hidden rounded-xl border border-blue-400 bg-white p-4 duration-300 hover:rotate-1 sm:col-span-3 lg:col-span-2 dark:border-blue-50 dark:bg-slate-600">
+              <div>
+                <div class="flex items-center justify-center pt-6 lg:px-6">
+                  <svg class="h-20 w-20 dark:fill-slate-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M1.004 5.998l10.996-5.998 10.99 6.06-10.985 5.86-11.001-5.922zm11.996 7.675v10.327l10-5.362v-10.326l-10 5.361zm-2 0l-10-5.411v10.376l10 5.362v-10.327z" /></svg>
+                </div>
+                <div class="relative z-10 mt-6 space-y-2 text-center">
+                  <h2 class="group-hover:text-secondary-950 text-lg font-medium text-gray-800 transition dark:text-white">This is a box</h2>
+                  <p class="text-gray-700 dark:text-gray-300">Introducing the marvelous "Box-o-Fun" – the ultimate treasure trove of surprises wrapped up in cardboard!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  
  `,
   },
   {
-    id: "7",
+    id: "5",
     nombre: "Skeleton card",
     html: `
     <div class="mx-auto px-5">
@@ -205,22 +163,35 @@ const datos = [
  `,
   },
   {
-    id: "8",
-    nombre: "Skeleton card",
+    id: "100",
+    nombre: "Wave button",
     html: `
-    <div class="mx-auto px-5">
-  <div class="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 dark:bg-gray-800">
-    <img class="mb-2 h-40 w-full rounded-lg bg-gray-300 object-cover object-center dark:bg-gray-500" src="https://live.staticflickr.com/65535/53542155962_50c394b197_c.jpg" alt="img" />
-    <p class="text-xl text-gray-900 dark:text-gray-500">Javier Roca</p>
-    <p class="text-xs italic text-gray-300 dark:text-gray-500">Web developer</p>
-  </div>
-</div>
+    <button class="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50  overflow-hidden h-14 w-56 rounded-md bg-sky-800 p-2 flex justify-center items-center font-extrabold">
+    <div class="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-900 delay-150 group-hover:delay-75"></div>
+    <div class="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-800 delay-150 group-hover:delay-100"></div>
+    <div class="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-700 delay-150 group-hover:delay-150"></div>
+    <div class="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-600 delay-150 group-hover:delay-200"></div>
+    <div class="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all  duration-500 ease-in-out bg-sky-500 delay-150 group-hover:delay-300"></div>
+    <p class="z-10">Discover More</p>
+  </button>
+  
+  
+ `,
+  },
+  {
+    id: "101",
+    nombre: "Blur button",
+    html: `
+
+    <button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
+    See more
+  </button>  
  `,
   },
   {
     id: "99999",
     nombre: "Componente 3",
-    html: ``,
+    html: `<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"></div>`,
   },
 ];
 
@@ -456,6 +427,30 @@ function ComponentsComponentId() {
               <script>
                 tailwind.config = {
                   darkMode: 'class',
+                  theme: {
+                    extend: {
+                      colors: {
+                        primary: {
+                          100: '#d4eaf7',
+                          200: '#b6ccd8',
+                          300: '#3b3c3d',
+                        },
+                        accent: {
+                          100: '#71c4ef',
+                          200: '#00668c',
+                        },
+                        text: {
+                          100: '#1d1c1c',
+                          200: '#313d44',
+                        },
+                        bg: {
+                          100: '#fffefb',
+                          200: '#f5f4f1',
+                          300: '#cccbc8',
+                        }
+                      },
+                    },
+                  },
                 }
             
                 function toggleMode() {
@@ -467,9 +462,9 @@ function ComponentsComponentId() {
                   const button = document.getElementById('modeToggleButton');
                   // Cambia el texto del botón según el modo actual
                   if (body.classList.contains('light')) {
-                    button.innerHTML = '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>';
+                    button.innerHTML = '<svg class="stroke-accent-200 group-hover:stroke-white dark:stroke-text-100 group-hover:dark:stroke-white"  stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>';
                   } else {
-                    button.innerHTML = '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path><path d="M6.343 17.657l-1.414 1.414"></path><path d="M6.343 6.343l-1.414 -1.414"></path><path d="M17.657 6.343l1.414 -1.414"></path><path d="M17.657 17.657l1.414 1.414"></path><path d="M4 12h-2"></path><path d="M12 4v-2"></path><path d="M20 12h2"></path><path d="M12 20v2"></path></svg>';
+                    button.innerHTML = '<svg class="stroke-accent-200 group-hover:stroke-white dark:stroke-text-100 group-hover:dark:stroke-white"  stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path><path d="M6.343 17.657l-1.414 1.414"></path><path d="M6.343 6.343l-1.414 -1.414"></path><path d="M17.657 6.343l1.414 -1.414"></path><path d="M17.657 17.657l1.414 1.414"></path><path d="M4 12h-2"></path><path d="M12 4v-2"></path><path d="M20 12h2"></path><path d="M12 20v2"></path></svg>';
                   }
                 }
               </script>
@@ -478,7 +473,34 @@ function ComponentsComponentId() {
               <main class="bg-white h-full sm:h-screen flex justify-center items-start md:items-center dark:bg-slate-600">
                 <!-- Aquí se incluirá el contenido del componente -->
                 ${componente.html} 
-                <button id="modeToggleButton" onclick="toggleMode()" class="p-2 rounded absolute top-2 right-2 border border-[#71c4ef] bg-[#f5f4f1]"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg></button>
+           
+                <!-- <div class="p-2 rounded absolute top-2 right-12 w-6 h-6 flex justify-center items-center">
+                    <button id="modeToggleButton" onclick="toggleMode()" class="relative group duration-300 inline-block p-1 font-medium group rounded-full">
+                    <span class="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                    <span class="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 "></span>
+                    <div class="relative text-black group-hover:text-white flex justify-center items-center">
+                     
+                      <svg class="duration-300 flex-shrink-0 w-6 h-6 bg-white rounded-full  stroke-accent-200    group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z">
+                      </path>
+                      </svg>
+                    </div>
+                  </button>
+                </div> -->
+
+
+              
+                <!-- <button id="modeToggleButton" onclick="toggleMode()" class="p-2 rounded absolute top-2 right-2 border border-[#71c4ef] bg-[#f5f4f1]">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z">
+                </path>
+                </svg>
+                </button> -->
+
+                <button id="modeToggleButton" onclick="toggleMode()" class="p-2 hover:bg-accent-200 hover:dark:bg-text-100 group z-20 rounded-full absolute top-2 right-2 border-2 border-accent-200 dark:border-text-100 duration-300 bg-bg-100 [box-shadow:1px_1px_0px_1px_#00668c] dark:[box-shadow:1px_1px_0px_1px_#1d1c1c] hover:dark:dark:[box-shadow:0px_0px_0px_0px_#1d1c1c] hover:[box-shadow:0px_0px_0px_0px_#00668c] ">
+                <svg class="stroke-accent-200 group-hover:stroke-white dark:stroke-text-100 group-hover:dark:stroke-white" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+                </button> 
+
               </main>
             </body>
             </html>
@@ -494,7 +516,7 @@ function ComponentsComponentId() {
               onTouchStart={handleTouchStart}
             />
             <div className="splitter__second" ref={secondHalfRef}>
-            <TbArrowBigLeftLinesFilled  className=" text-accent-200 w-8 h-8  dark:bg-text-200 rounded-full p-1   mr-1 group-hover:bg-accent-100" />
+              <TbArrowBigLeftLinesFilled className=" text-accent-200 w-8 h-8  dark:bg-text-200 rounded-full p-1   mr-1 group-hover:bg-accent-100" />
             </div>
           </div>
         )}
@@ -514,27 +536,42 @@ function ComponentsComponentId() {
         </p>
         <div className="flex flex-col md:flex-row gap-2 w-full md:w-fit">
           <button
-            className="flex gap-1  bg-bg-100 p-2 rounded-full justify-center items-center"
+            className="relative group duration-300 inline-block px-4 py-2 font-medium group rounded-full"
             onClick={copyHTMLToClipboard}
           >
-            <TbCopy className="flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200 rounded-full p-1 stroke-bg-100  mr-1 group-hover:bg-accent-100" />
-            <p className="font-bold text-accent-200 dark:text-text-100">Copy</p>
+            <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+            <div className="relative text-black group-hover:text-white flex justify-center items-center">
+              <TbCopy className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+              <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                Copy
+              </p>
+            </div>
           </button>
           <button
-            className="flex gap-1 bg-bg-100 p-2 rounded-full justify-center items-center"
+            className="relative group duration-300 inline-block px-4 py-2 font-medium group rounded-full"
             onClick={toggleView}
           >
-            <TbCode className="flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200 rounded-full p-1 stroke-bg-100  mr-1 group-hover:bg-accent-100" />
-            <p className="font-bold text-accent-200 dark:text-text-100">
-              Show/Hide code
-            </p>
+            <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+            <div className="relative text-black group-hover:text-white flex justify-center items-center">
+              <TbCode className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+              <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                Show/Hide code
+              </p>
+            </div>
           </button>
           <a
-            className="w-full md:w-fit px-4 py-2.5 text-bg-100 font-sans flex items-center gap-2 border-none rounded-full text-base  font-semibold transition-colors duration-200 [background:_linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb);] text-offwhite cursor-pointer lg:flex button--create h-[42px] relative overflow-visible"
-            href="https://uiverse.io"
+            href="https://uiverse.io/profile/Javierrocadev"
+            className="relative group duration-300  px-4 py-2 font-medium group rounded-full flex "
           >
-            {" "}
-            Need more...
+            <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span className="absolute rounded-full inset-0 w-full h-full [background:_linear-gradient(144deg,#af40ff,#5b42f3_50%,#00ddeb);] border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+            <div className="relative text-black group-hover:text-white flex justify-center items-center">
+              <p className="font-bold text-white group-hover:text-white ">
+                Need more?
+              </p>
+            </div>
           </a>
         </div>
       </div>

@@ -53,7 +53,41 @@ export default function App() {
         >
           <div className="bg-bg-100 dark:bg-accent-200 h-screen flex flex-col md:flex-row gap-4 p-4">
             <nav className="flex flex-col gap-y-4 md:w-44 w-full shrink-0">
-              <div className=" duration-300 border rounded-full bg-bg-200 hover:bg-primary-100 dark:bg-primary-100 hover:dark:bg-primary-300 border-accent-200 dark:border-text-200">
+              
+
+              <div className="">
+                <button
+                  type="button"
+                  className="w-full relative p-2 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-accent-200 dark:text-accent-200 hover:text-accent-100 font-medium dark:hover:text-gray-500"
+                  data-hs-theme-click-value="dark"
+                >
+                  <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+                  <div className="relative text-black group-hover:text-white flex justify-center items-center">
+                    <TbMoon className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+                    <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                      Dark mode
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  className="relative w-full p-2 hidden hs-dark-mode group hs-dark-mode-active:flex items-center    font-medium dark:text-text-200 dark:hover:text-accent-100"
+                  data-hs-theme-click-value="light"
+                >
+                  <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+                  <div className="relative text-black group-hover:text-white flex justify-center items-center">
+                    <TbSun className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+                    <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                      Light Mode
+                    </p>
+                  </div>
+                </button>
+              </div>
+
+              {/* <div className=" duration-300 border rounded-full bg-bg-200 hover:bg-primary-100 dark:bg-primary-100 hover:dark:bg-primary-300 border-accent-200 dark:border-text-200">
                 <button
                   type="button"
                   className="w-full p-2 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-accent-200 dark:text-accent-200 hover:text-accent-100 font-medium dark:hover:text-gray-500"
@@ -62,6 +96,7 @@ export default function App() {
                   <TbSun className="flex-shrink-0 w-6 h-6 bg-accent-200 rounded-full p-1 stroke-bg-100 fill-bg-100 mr-1 group-hover:bg-accent-100" />
                   <p>Dark mode</p>
                 </button>
+                
                 <button
                   type="button"
                   className="w-full p-2 hidden hs-dark-mode group hs-dark-mode-active:flex items-center    font-medium dark:text-text-200 dark:hover:text-accent-100"
@@ -70,13 +105,13 @@ export default function App() {
                   <TbMoon className="flex-shrink-0 w-6 h-6 bg-accent-200 rounded-full p-1 stroke-bg-100 fill-bg-100 mr-1 group-hover:bg-accent-100" />
                   <p>Light mode</p>
                 </button>
-              </div>
+              </div> */}
 
               <div className=" duration-300  rounded-full bg-primary-300  hover:bg-primary-100 dark:bg-primary-100 hover:dark:bg-primary-300 border-accent-200 dark:border-text-200">
-                <button className="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative bg-neutral-900 w-full py-3 border text-left  text-gray-50 text-base font-bold rounded-full overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-sky-900 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse">
-                  <TbBrandGithub className="w-6 h-6 fill-neutral-50" />
+                <a href="https://github.com/Javierrocadev/tailsnippets" className="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500  hover:border-neutral-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline  hover:underline-offset-4 origin-left hover:decoration-2  relative bg-neutral-900 w-full py-2 border text-left  text-gray-50 text-base font-bold rounded-full overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-sky-900 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse">
+                  <TbBrandGithub className="w-5 h-5 stroke-transparent duration-300 fill-neutral-50 group-hover:fill-amber-300 " />
                   Star on Github
-                </button>
+                </a>
               </div>
 
               <div className="hs-accordion-group ">
@@ -127,7 +162,11 @@ export default function App() {
                   >
                     <div className="pb-4 px-5 mt-4">
                       <Link to="/components/1">
-                        <img  className="w-24 h-12 mb-2 bg-white rounded object-contain " src={avatar1} alt="avatar1" />
+                        <img
+                          className="w-24 h-12 mb-2 bg-white rounded object-contain "
+                          src={avatar1}
+                          alt="avatar1"
+                        />
                       </Link>
                       <Link to="/components/2">
                         <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
@@ -137,39 +176,18 @@ export default function App() {
                       </Link>
                       <Link to="/components/4 ">
                         <div className="w-24 h-12 mb-2 bg-accent-100 dark:bg-accent-200 rounded flex items-center justify-center gap-2">
-                       
                           <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
                           <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
                           <div className="w-5 h-6 rounded-sm bg-primary-100 dark:bg-primary-200"></div>
-                          </div>
-                         
-                        
+                        </div>
                       </Link>
                       <Link to="/components/5 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/6 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/7 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/7 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/7 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/7 ">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
-                      </Link>
-                      <Link to="/components/7 ">
                         <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
                       </Link>
                     </div>
                   </div>
                 </div>
-   {/* ------------------------GROUP----------------------------------- */}
+                {/* ------------------------GROUP----------------------------------- */}
                 <div
                   className="hs-accordion bg-bg-200 border border-accent-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-primary-100 dark:border-text-200"
                   id="hs-bordered-heading-two"
@@ -207,7 +225,7 @@ export default function App() {
                     >
                       <path d="M5 12h14" />
                     </svg>
-                    Accordion #2
+                    Buttons
                   </button>
                   <div
                     id="hs-basic-bordered-collapse-two"
@@ -215,16 +233,18 @@ export default function App() {
                     aria-labelledby="hs-bordered-heading-two"
                   >
                     <div className="pb-4 px-5 mt-4">
-                      <Link to="/components/1">
+                      <Link to="/components/100">
                         <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
                       </Link>
-                      <Link to="/components/2">
-                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded"></div>
+                      <Link to="/components/101">
+                        <div className="w-24 h-12 mb-2 bg-accent-100 rounded flex justify-center items-center">
+                          <div className="w-12 h-4 bg-blue-400"></div>
+                        </div>
                       </Link>
                     </div>
                   </div>
                 </div>
-   {/* ------------------------GROUP----------------------------------- */}
+                {/* ------------------------GROUP----------------------------------- */}
                 <div
                   className="hs-accordion bg-bg-200 border border-accent-200 -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-primary-100 dark:border-text-200"
                   id="hs-bordered-heading-three"
@@ -279,36 +299,46 @@ export default function App() {
                     </div>
                   </div>
                 </div>
-
-            
-
               </div>
             </nav>
           </div>
         </div>
         <main className="bg-bg-100 dark:bg-accent-200 h-screen flex flex-col md:flex-row gap-4 p-4">
           <nav className="flex flex-row gap-y-4 md:w-44 w-full shrink-0 gap-4">
-            <div className="w-full duration-300 border rounded-full bg-bg-200 hover:bg-primary-100 dark:bg-primary-100 hover:dark:bg-primary-300 border-accent-200 dark:border-text-200">
-              <button
-                type="button"
-                className="w-full p-2 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-accent-200 dark:text-accent-200 hover:text-accent-100 font-medium dark:hover:text-gray-500"
-                data-hs-theme-click-value="dark"
-              >
-                <TbSun className="flex-shrink-0 w-6 h-6 bg-accent-200 rounded-full p-1 stroke-bg-100 fill-bg-100 mr-1 group-hover:bg-accent-100" />
-                <p>Dark mode</p>
-              </button>
-              <button
-                type="button"
-                className="w-full p-2 hidden hs-dark-mode group hs-dark-mode-active:flex items-center    font-medium dark:text-text-200 dark:hover:text-accent-100"
-                data-hs-theme-click-value="light"
-              >
-                <TbMoon className="flex-shrink-0 w-6 h-6 bg-accent-200 rounded-full p-1 stroke-bg-100 fill-bg-100 mr-1 group-hover:bg-accent-100" />
-                <p>Light mode</p>
-              </button>
-            </div>
+          <div className="w-full">
+                <button
+                  type="button"
+                  className="w-full relative p-2 hs-dark-mode-active:hidden block hs-dark-mode group flex items-center text-accent-200 dark:text-accent-200 hover:text-accent-100 font-medium dark:hover:text-gray-500"
+                  data-hs-theme-click-value="dark"
+                >
+                  <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+                  <div className="relative text-black group-hover:text-white flex justify-center items-center">
+                    <TbMoon className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+                    <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                      Dark mode
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  className="relative w-full p-2 hidden hs-dark-mode group hs-dark-mode-active:flex items-center    font-medium dark:text-text-200 dark:hover:text-accent-100"
+                  data-hs-theme-click-value="light"
+                >
+                  <span className="absolute rounded-full inset-0 w-full h-full transition duration-200 ease-out transform translate-x-0.5 translate-y-0.5 bg-accent-200 dark:bg-text-100 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute rounded-full inset-0 w-full h-full bg-white border-2 border-accent-200 dark:border-text-100 group-hover:dark:bg-text-100 group-hover:bg-accent-200"></span>
+                  <div className="relative text-black group-hover:text-white flex justify-center items-center">
+                    <TbSun className="duration-300 flex-shrink-0 w-6 h-6 bg-accent-200 dark:bg-text-200  rounded-full p-1 stroke-bg-100  mr-1 group-hover:stroke-accent-200 group-hover:bg-white group-hover:dark:stroke-text-100 " />
+                    <p className="font-bold text-accent-200 group-hover:text-white dark:text-text-100">
+                      Light Mode
+                    </p>
+                  </div>
+                </button>
+              </div>
             <button
               type="button"
-              className="p-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="duration-300 p-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-lg border border-accent-200 bg-bg-200 text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-primary-100 dark:border-gray-700 dark:text-accent-200 dark:hover:bg-primary-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               data-hs-overlay="#sidebar-mini"
               aria-controls="sidebar-mini"
               aria-label="Toggle navigation"
